@@ -12,6 +12,9 @@ class Test(unittest.TestCase):
   def test_check_if_leap_year_only_divisible_by_4(self):
     self.assertTrue(main.leap_year(1996))
 
+  def test_check_if_normal_year_divisible_by_4_and_100(self):
+    self.assertFalse(main.leap_year(1900))
+
 
 if __name__ == '__main__':
   unittest.main()
