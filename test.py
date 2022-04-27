@@ -18,6 +18,9 @@ class Test(unittest.TestCase):
   def test_check_if_leap_year_divisible_by_400(self):
     self.assertTrue(main.leap_year(2000))
 
+  def test_check_if_divisible_by_4000(self):
+    self.assertFalse(main.leap_year(4000))
+
 
 if __name__ == '__main__':
   unittest.main()
